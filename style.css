@@ -5,7 +5,11 @@ body {
 }
 #title {
     background-color: cadetblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
-p {
-    
+#top {
+    margin-top: 150px;
 }
