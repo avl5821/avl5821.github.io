@@ -13,3 +13,7 @@ body {
 #top {
     margin-top: 150px;
 }
+div{
+    margin:auto;
+    width: 75%;
+}
