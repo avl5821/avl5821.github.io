@@ -30,11 +30,25 @@ h3{
 }
 p{
     font-size: 14pt;
-    padding: 5px;
+    padding: 2px;
 }
 #employ{
     border-radius: 20px;
     border-width: 2px;
     border-style: solid;
+
+}
+.hold{
+    background-color: blanchedalmond;
+}
+
+#hide{
+    display: none;
+}
+.hold:hover #hide {
+    max-height: 100%;
+    max-width: 100%;
+    display: contents;
+    transition: 1s ease-in-out;
 
 }
