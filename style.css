@@ -30,9 +30,8 @@ h3{
 }
 p{
     font-size: 14pt;
-    padding: 2px;
 }
-#employ{
+.employ{
     border-radius: 20px;
     border-width: 2px;
     border-style: solid;
@@ -40,15 +39,17 @@ p{
 }
 .hold{
     background-color: blanchedalmond;
+    width: 90%;
 }
 
-#hide{
-    display: none;
+.hide{
+    transition: opacity 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out;
+     opacity: 0;
+     height: 0;
+     overflow: hidden;
 }
-.hold:hover #hide {
-    max-height: 100%;
-    max-width: 100%;
-    display: contents;
-    transition: 1s ease-in-out;
-
+.hold:hover .hide {
+    height: auto;
+    opacity: 1;
 }
