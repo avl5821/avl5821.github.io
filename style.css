@@ -10,7 +10,7 @@ body {
     left: 0;
     width: 100%;
 }
-#top {
+.top {
     margin-top: 150px;
 }
 div{
@@ -43,13 +43,13 @@ p{
 }
 
 .hide{
-    transition: opacity 0.5s ease-in-out;
-    transition: height 0.5s ease-in-out;
-     opacity: 0;
-     height: 0;
-     overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    max-height: 0;
 }
 .hold:hover .hide {
     height: auto;
     opacity: 1;
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
 }
